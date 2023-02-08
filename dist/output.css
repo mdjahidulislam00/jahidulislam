@@ -584,10 +584,6 @@ video {
   z-index: 100;
 }
 
-.float-right {
-  float: right;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -602,12 +598,16 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-40 {
-  margin-top: 10rem;
+.mt-64 {
+  margin-top: 16rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mt-10 {
@@ -656,18 +656,6 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-60 {
-  margin-top: 15rem;
-}
-
-.mt-64 {
-  margin-top: 16rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
 }
 
 .block {
@@ -780,10 +768,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-5 {
@@ -931,11 +915,6 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
 .bg-rose-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(251 113 133 / var(--tw-bg-opacity));
@@ -953,6 +932,12 @@ video {
 .from-pink-500 {
   --tw-gradient-from: #ec4899;
   --tw-gradient-to: rgb(236 72 153 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-600 {
+  --tw-gradient-from: #db2777;
+  --tw-gradient-to: rgb(219 39 119 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1061,8 +1046,8 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pl-1 {
-  padding-left: 0.25rem;
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .pt-4 {
@@ -1083,22 +1068,6 @@ video {
 
 .pl-2 {
   padding-left: 0.5rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pr-1 {
-  padding-right: 0.25rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
 }
 
 .text-center {
@@ -1186,23 +1155,28 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-transparent {
   color: transparent;
 }
 
-.text-slate-600 {
+.text-green-600 {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
+  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .text-rose-700 {
   --tw-text-opacity: 1;
   color: rgb(190 18 60 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -1220,14 +1194,57 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-gray-600 {
+.text-rose-300 {
   --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+  color: rgb(253 164 175 / var(--tw-text-opacity));
+}
+
+.text-rose-800 {
+  --tw-text-opacity: 1;
+  color: rgb(159 18 57 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-rose-600 {
+  --tw-text-opacity: 1;
+  color: rgb(225 29 72 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-yellow-700 {
+  --tw-text-opacity: 1;
+  color: rgb(161 98 7 / var(--tw-text-opacity));
+}
+
+.text-rose-400\/60 {
+  color: rgb(251 113 133 / 0.6);
 }
 
 .subpixel-antialiased {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.caret-pink-500 {
+  caret-color: #ec4899;
 }
 
 .shadow-md {
@@ -1295,18 +1312,18 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-gray-800 {
+  --tw-shadow-color: #1f2937;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-black {
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.shadow-gray-900 {
-  --tw-shadow-color: #111827;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-gray-800 {
-  --tw-shadow-color: #1f2937;
+.shadow-blue-600 {
+  --tw-shadow-color: #2563eb;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1327,10 +1344,6 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
-}
-
-.hover\:ml-5:hover {
-  margin-left: 1.25rem;
 }
 
 .hover\:mr-5:hover {
@@ -1550,5 +1563,10 @@ video {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
